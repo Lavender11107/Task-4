@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website Example</title>
+    <style>
+        /* Desktop Styles (Default) */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            background-color: #333;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            flex: 1;
+            text-align: center;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #111;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            header {
+                font-size: 18px;
+                padding: 15px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                /* Stack menu vertically */
+            }
+
+            nav ul li {
+                text-align: left;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            body {
+                font-size: 16px;
+            }
+        }
+
+        /* Extra small devices (phones) */
+        @media (max-width: 480px) {
+            header {
+                font-size: 16px;
+                padding: 10px;
+            }
+
+            nav ul li a {
+                padding: 8px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            body {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Responsive Website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Welcome!</h2>
+        <p>This page is mobile-friendly. Resize your browser window or view on a phone to see the layout adapt.</p>
+        <img src="C:\Users\ajays\Downloads\channels4_profile.jpg" alt="Sample Image">
+        <p>Task 4</p>
+    </div>
+
+</body>
+
+</html>
